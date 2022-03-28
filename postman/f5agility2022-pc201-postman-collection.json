@@ -47,10 +47,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{do_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -98,10 +98,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{do_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -149,10 +149,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{as3_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -200,10 +200,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{as3_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -251,10 +251,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{cfe_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -302,10 +302,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{cfe_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -353,10 +353,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{ts_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -404,10 +404,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{ts_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip1_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip1_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -427,7 +427,7 @@
 								"type": "text/javascript",
 								"exec": [
 									"",
-									"pm.collectionVariables.set(\"bigip_mgmt_ip\", pm.environment.get(\"bigip1_mgmt_ip\"));"
+									"pm.collectionVariables.set(\"bigip1_mgmt_ip\", pm.environment.get(\"bigip1_mgmt_ip\"));"
 								]
 							}
 						},
@@ -481,10 +481,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{do_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -532,10 +532,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{do_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -583,10 +583,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{as3_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -634,10 +634,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{as3_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -685,10 +685,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{cfe_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -736,10 +736,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{cfe_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -787,10 +787,10 @@
 									"raw": "{\n\t\"command\": \"run\", \"utilCmdArgs\": \"-c \\\"cd /var/config/rest/downloads/ && curl -sk -LJO {{ts_url}}\\\"\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/tm/util/bash",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/tm/util/bash",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -838,10 +838,10 @@
 									"raw": "{\n    \"operation\":\"INSTALL\",\"packageFilePath\":\"/var/config/rest/downloads/{{ts_file}}\"\n}"
 								},
 								"url": {
-									"raw": "https://{{bigip_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
+									"raw": "https://{{bigip2_mgmt_ip}}/mgmt/shared/iapp/package-management-tasks",
 									"protocol": "https",
 									"host": [
-										"{{bigip_mgmt_ip}}"
+										"{{bigip2_mgmt_ip}}"
 									],
 									"path": [
 										"mgmt",
@@ -861,7 +861,7 @@
 								"type": "text/javascript",
 								"exec": [
 									"",
-									"pm.collectionVariables.set(\"bigip_mgmt_ip\", pm.environment.get(\"bigip2_mgmt_ip\"));"
+									"pm.collectionVariables.set(\"bigip2_mgmt_ip\", pm.environment.get(\"bigip2_mgmt_ip\"));"
 								]
 							}
 						},
@@ -2130,10 +2130,6 @@
 		}
 	],
 	"variable": [
-		{
-			"key": "bigip_mgmt_ip",
-			"value": ""
-		},
 		{
 			"key": "do_url",
 			"value": "https://github.com/F5Networks/f5-declarative-onboarding/releases/download/v1.28.0/{{do_file}}"
