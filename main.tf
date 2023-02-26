@@ -1,7 +1,7 @@
 provider "aws" {
-  region                  = var.aws_region
+  region                   = var.aws_region
   shared_credentials_files = ["~/.aws/credentials"]
-  profile                 = "default"
+  profile                  = "default"
 }
 
 resource "aws_vpc" "terraform-vpc" {
@@ -9,7 +9,6 @@ resource "aws_vpc" "terraform-vpc" {
   instance_tenancy     = "default"
   enable_dns_support   = "true"
   enable_dns_hostnames = "true"
-  enable_classiclink   = "false"
 
   tags = {
     Name = "terraform_${var.emailid}"
