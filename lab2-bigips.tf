@@ -8,7 +8,7 @@ data "aws_ami" "f5" {
 
   filter {
     name   = "name"
-    values = values = ["F5 BIGIP-16.1.3.*PAYG-Adv WAF Plus 25Mbps*"]
+    values = ["F5 BIGIP-16.1.3.*PAYG-Adv WAF Plus 25Mbps*"]
     # values = ["F5 BIGIP-16.1.2.1-0.0.10 PAYG-Adv WAF Plus 25Mbps-211222202458-3c272b55-0405-4478-a772-d0402ccf13f9"]
     # values = ["*BIGIP-16.0.1.1-0.0.6*3c272b55-0405-4478-a772-d0402ccf13f9*"]
     # values = ["*BIGIP-16.0.1.1-0.0.6*3e567b08-20a9-444f-a72a-7e8da3c2cbdf*"]
