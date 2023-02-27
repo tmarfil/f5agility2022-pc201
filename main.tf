@@ -1,9 +1,3 @@
-provider "aws" {
-  region                   = var.aws_region
-  shared_credentials_files = ["~/.aws/credentials"]
-  profile                  = "default"
-}
-
 resource "aws_vpc" "terraform-vpc" {
   cidr_block           = "10.0.0.0/16"
   instance_tenancy     = "default"
