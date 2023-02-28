@@ -1,13 +1,6 @@
-terraform {
-  required_version = "~> 1.1.7"
-  required_providers {
-    template = "~> 2.1"
-    local    = "~> 1.2"
-  }
-}
 
 /*
-  aws ec2 describe-images --region us-west-2 --filters Name=name,Values=*BIGIP-15.1.2.1*25Mbps* | jq '.Images[] |.ImageId, .Name'
+  aws ec2 describe-images --region us-west-2 --filters Name=name,Values=*BIGIP-16.1.3*25Mbps* | jq '.Images[] |.ImageId, .Name'
 */
 
 data "aws_ami" "f5" {
@@ -15,7 +8,8 @@ data "aws_ami" "f5" {
 
   filter {
     name   = "name"
-    values = ["F5 BIGIP-16.1.2.1-0.0.10 PAYG-Adv WAF Plus 25Mbps-211222202458-3c272b55-0405-4478-a772-d0402ccf13f9"]
+    values = ["F5 BIGIP-16.1.3.*PAYG-Adv WAF Plus 25Mbps*"]
+    # values = ["F5 BIGIP-16.1.2.1-0.0.10 PAYG-Adv WAF Plus 25Mbps-211222202458-3c272b55-0405-4478-a772-d0402ccf13f9"]
     # values = ["*BIGIP-16.0.1.1-0.0.6*3c272b55-0405-4478-a772-d0402ccf13f9*"]
     # values = ["*BIGIP-16.0.1.1-0.0.6*3e567b08-20a9-444f-a72a-7e8da3c2cbdf*"]
     # values = ["*BIGIP-15.1.2.1-0.0.10*3e567b08-20a9-444f-a72a-7e8da3c2cbdf*"]
